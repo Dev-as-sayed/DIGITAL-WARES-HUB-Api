@@ -6,7 +6,7 @@ const Brands = () => {
     const [brands, setBrands] = useState([]);
     
     useEffect( () => {
-        fetch('https://digital-wares-hub-server-nopiejy7j-sayeds-projects.vercel.app/addBrand')
+        fetch('https://digital-wares-hub-server.vercel.app/addBrand')
             .then(res => res.json())
             .then(data => setBrands(data))
     }, [])

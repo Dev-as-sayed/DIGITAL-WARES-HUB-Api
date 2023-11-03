@@ -12,8 +12,10 @@ const AddBrand = () => {
         const newBrand = {photo, brand};
 
         console.log(newBrand);
-        
-        fetch('https://digital-wares-hub-server-nopiejy7j-sayeds-projects.vercel.app/addBrand', {
+
+        // https://digital-wares-hub-server.vercel.app
+
+        fetch('https://digital-wares-hub-server.vercel.app/addBrand', {
             method: 'POST',
             headers:{
                 'content-type': 'application/json'

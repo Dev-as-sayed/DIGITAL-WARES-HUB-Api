@@ -10,13 +10,13 @@ const MyCart = () => {
     console.log(cartData);
 
     useEffect( ()=>{
-        fetch('https://digital-wares-hub-server-nopiejy7j-sayeds-projects.vercel.app/silactedProduc')
+        fetch('https://digital-wares-hub-server.vercel.app/silactedProduc')
             .then(res => res.json())
             .then(data => setCartData(data))
     }, [])
     
     useEffect(() => {
-        fetch(`https://digital-wares-hub-server-nopiejy7j-sayeds-projects.vercel.app/product/${_id}`)
+        fetch(`https://digital-wares-hub-server.vercel.app/product/${_id}`)
             .then(res => res.json())
             .then(data => setSilactedProduct(data))
     }, [_id])
@@ -32,7 +32,7 @@ const MyCart = () => {
         const lockProduct = {silactedProductsName, silactedProductPrice, silactedProductId}
         console.log(lockProduct);
 
-        fetch( 'https://digital-wares-hub-server-nopiejy7j-sayeds-projects.vercel.app/silactedProduct', {
+        fetch( 'https://digital-wares-hub-server.vercel.app/silactedProduct', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -67,7 +67,7 @@ const MyCart = () => {
             } else {
               swal("Your imaginary file is safe!");
             }
-            fetch(`https://digital-wares-hub-server-nopiejy7j-sayeds-projects.vercel.app/deletCard/${_id}`, {
+            fetch(`https://digital-wares-hub-server.vercel.app/deletCard/${_id}`, {
                 method: 'DELETE'
             })
             .then(res => res.json())

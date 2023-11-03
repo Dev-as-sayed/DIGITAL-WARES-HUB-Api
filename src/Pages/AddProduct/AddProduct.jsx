@@ -22,7 +22,7 @@ const AddProduct = () => {
         const newProduct ={name, brandName, category, product, price, shortDescription, photo, rating}
         console.log(newProduct);
 
-        fetch( 'https://digital-wares-hub-server-nopiejy7j-sayeds-projects.vercel.app/addProduct', {
+        fetch( 'https://digital-wares-hub-server.vercel.app/addProduct', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

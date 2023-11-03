@@ -10,7 +10,7 @@ const Products = () => {
     console.log(products);
 
     useEffect( () => {
-        fetch(`https://digital-wares-hub-server-nopiejy7j-sayeds-projects.vercel.app/products/${brand}`)
+        fetch(`https://digital-wares-hub-server.vercel.app/products/${brand}`)
             .then(res => res.json())
             .then(data => setProducts(data))
     }, [brand]);

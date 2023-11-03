@@ -22,7 +22,7 @@ const Register = () => {
             .then( (result => {
                 console.log(result.user)
 
-                fetch('https://digital-wares-hub-server-nopiejy7j-sayeds-projects.vercel.app/regiter', {
+                fetch('https://digital-wares-hub-server.vercel.app/regiter', {
                     method: 'POST',
                     headers: {
                         'content-type': 'application/json'
